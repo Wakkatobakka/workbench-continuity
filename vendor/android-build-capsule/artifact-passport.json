@@ -1,0 +1,236 @@
+{
+  "$schema": "urn:artifact-passport:schema:0.7",
+  "spec_version": "0.7",
+  "passport_id": "wakka.android.build.capsule.public",
+  "artifact": {
+    "name": "WAKKA Android Build Capsule Public Core",
+    "version": "0.1.0",
+    "kind": "package",
+    "description": "Shareable Android build orchestration with a separately generated private SDK runtime and an original plain-Java demo.",
+    "updated_at": "2026-10-04T08:44:34.404574+00:00",
+    "tags": [
+      "android",
+      "build-capsule",
+      "public-core",
+      "plain-java",
+      "offline-runtime",
+      "wakka"
+    ]
+  },
+  "intent": {
+    "purpose": "Preserve conversational Android iteration while distributing only the owned core and obtaining SDK tools separately.",
+    "audiences": [
+      "People using a chat with code execution",
+      "Android project owners",
+      "AI maintainers"
+    ],
+    "success_criteria": [
+      "Public ZIP contains only allowlisted owned code/docs/example and no SDK binary or private key.",
+      "Fresh private runtime builds the example from Java source to a signed APK with verified v1/v2/v3 signatures.",
+      "An existing owner Capsule remains byte-for-byte unchanged."
+    ],
+    "out_of_scope": [
+      "Universal Android/Gradle/Compose/Wear/NDK support",
+      "Accepting third-party licenses for a user",
+      "Claiming a device test from an APK build"
+    ]
+  },
+  "operation": {
+    "entry_points": [
+      {
+        "path": "README_FIRST.txt",
+        "role": "Human setup instructions",
+        "open_with": "UTF-8 text viewer"
+      },
+      {
+        "path": "AI_START_HERE.txt",
+        "role": "AI intake and build contract",
+        "open_with": "UTF-8 text viewer"
+      },
+      {
+        "path": "MAKE_CHAT_CAPSULE.bat",
+        "role": "Create a private Linux SDK runtime on Windows",
+        "open_with": "Windows Command Prompt"
+      },
+      {
+        "path": "abc.py",
+        "role": "Verify, import and build",
+        "open_with": "Python 3.10+"
+      }
+    ],
+    "environment": [
+      "Windows 10/11 target for runtime maker; owner Windows setup confirmed, exact version not recorded",
+      "Linux x86_64 + Python 3.10+ + JDK 17+ for compilation"
+    ],
+    "network_policy": "optional",
+    "network_notes": "Runtime acquisition uses official Google downloads after personal license acceptance. Completed compilation is offline. This metadata grants no additional network or signing authority.",
+    "dependencies": [
+      {
+        "name": "Host Python",
+        "requirement": "3.10+ on Linux execution host",
+        "purpose": "Run standard-library build orchestration"
+      },
+      {
+        "name": "Host JDK",
+        "requirement": "17+ including compiler module",
+        "purpose": "Compile Java and run D8/apksigner"
+      },
+      {
+        "name": "Owner-acquired SDK",
+        "requirement": "API 35 and Linux Build Tools 35.0.0",
+        "purpose": "Android API/resource/DEX/packaging/signing"
+      }
+    ]
+  },
+  "structure": {
+    "source_of_truth": [
+      {
+        "path": "abc.py",
+        "role": "Build and runtime orchestration"
+      },
+      {
+        "path": "tools/Make-Chat-Capsule.ps1",
+        "role": "Windows runtime maker"
+      },
+      {
+        "path": "official-downloads.json",
+        "role": "Verified official archive pins"
+      },
+      {
+        "path": "examples/CapsuleDemo",
+        "role": "Original example source"
+      }
+    ],
+    "generated_outputs": [
+      {
+        "path": "PUBLIC_FILES.sha256.json",
+        "role": "Public allowlist and hashes"
+      },
+      {
+        "path": "VERIFICATION.json",
+        "role": "Candidate verification record"
+      }
+    ],
+    "protected_items": [],
+    "ignore": [
+      ".private/",
+      "runtime/",
+      "Private_Capsules/",
+      "**/.local-builds/",
+      "Any project keystores or personal media"
+    ]
+  },
+  "constraints": {
+    "allowed_actions": [
+      "Verify the public core and SDK inventory",
+      "Build a currently authorized project",
+      "Create separate versioned candidates"
+    ],
+    "must": [
+      "Use current user authority for edits and signing",
+      "Keep owner runtime bundles and signing keys separate from public releases",
+      "Distinguish compilation from device evidence",
+      "Retain third-party notices in private runtimes"
+    ],
+    "must_not": [
+      "Copy the original private Capsule into a public release",
+      "Accept an SDK agreement automatically",
+      "Publish a generated private SDK bundle as this public core",
+      "Replace an existing app signing identity without the owner choosing that change"
+    ],
+    "preserve": [
+      "Conversational iteration",
+      "Original private Capsule"
+    ],
+    "data_classification": "public",
+    "data_handling": {
+      "may_leave_device": "yes",
+      "approved_contexts": [
+        "Public core may be shared under MIT"
+      ],
+      "redaction_required": false,
+      "notes": "This classification applies to public core files only. Generated SDK runtimes and signing keys have separate handling."
+    }
+  },
+  "procedures": {
+    "setup": [
+      "Read README_FIRST.txt",
+      "Create or import an owner-authorized private runtime"
+    ],
+    "edit": [
+      "Work in a separate candidate",
+      "Update public checksums after material changes"
+    ],
+    "build": [
+      "Run doctor",
+      "Use build for plain Java or run-project for an inspected existing Bash builder"
+    ],
+    "verify": [
+      "Run unit tests",
+      "Build from a fresh runtime extraction",
+      "Verify v1/v2/v3 and alignment",
+      "Check public allowlist for excluded files"
+    ],
+    "release": [
+      "Read docs/COMPONENT_REVIEW.md",
+      "Package only PUBLIC_FILES.sha256.json entries",
+      "Complete the Windows maker UI/device tests before claiming them"
+    ],
+    "recovery": [
+      "Keep the original private Capsule as the known-good separate baseline"
+    ]
+  },
+  "verification": {
+    "checks": [
+      {
+        "id": "public-boundary",
+        "description": "Public payload excludes SDKs and keys",
+        "method": "command",
+        "expected": "Only owned core, documentation and demo",
+        "required": true
+      },
+      {
+        "id": "native-build",
+        "description": "Fresh Java to signed APK",
+        "method": "command",
+        "expected": "APK, evidence, v1/v2/v3 true and alignment pass",
+        "required": true
+      },
+      {
+        "id": "original-preservation",
+        "description": "Original Capsule protected",
+        "method": "command",
+        "expected": "Identical hashes",
+        "required": true
+      }
+    ]
+  },
+  "authority": {
+    "owner": "Wakka",
+    "approvers": [
+      "Current owner of the target project"
+    ],
+    "change_policy": "Follow the current user instruction. Public code may be forked under MIT; target signing authority is separate."
+  },
+  "handoff": {
+    "start_here": "Read AI_START_HERE.txt, README_FIRST.txt and artifact-handoff.json.",
+    "safe_first_actions": [
+      "Verify public manifest",
+      "Inspect the current project build requirements"
+    ],
+    "known_limitations": [
+      "Linux x86_64 plain-Java profile",
+      "Host JDK required",
+      "Android device behavior remains untested",
+      "Full cached Gradle/Wear/NDK environment omitted"
+    ],
+    "open_questions": [
+      "Physical demo APK test",
+      "Future optional dependency modules"
+    ]
+  },
+  "review": {
+    "status": "ai-draft",
+    "notes": "Owner confirms public setup success. The generated runtime was freshly extracted and built CapsuleDemo from source; Android device behavior remains untested."
+  }
+}

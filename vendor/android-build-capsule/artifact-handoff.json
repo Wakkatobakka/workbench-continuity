@@ -1,0 +1,87 @@
+{
+  "$schema": "urn:artifact-passport:handoff-schema:0.7",
+  "spec_version": "0.7",
+  "passport_id": "wakka.android.build.capsule.public",
+  "artifact": {
+    "name": "WAKKA Android Build Capsule Public Core",
+    "version": "0.1.0"
+  },
+  "updated_at": "2026-10-04T08:44:34.404574+00:00",
+  "review": {
+    "status": "ai-draft",
+    "notes": "Owner confirms public setup success. The generated runtime was freshly extracted and built CapsuleDemo from source; Android device behavior remains untested."
+  },
+  "working_state": {
+    "current_status": "Public Windows setup and generated-runtime source build confirmed; physical demo behavior remains untested.",
+    "current_known_good": "Freshly extracted private runtime built the original demo from source; APK v1/v2/v3 signatures, alignment, SDK inventory and example project-script adapter passed. Thirteen unit checks passed. Original Capsule SHA-256 is unchanged. The owner Windows maker produced a runtime whose 11,331 SDK files verified and whose fresh demo build passed APK alignment and v1/v2/v3 signing verification.",
+    "last_material_change": "Updated public release documentation and evidence after the owner Windows maker run; build code and official download pins unchanged.",
+    "current_objective": "Maintain and validate the public Android Build Capsule preview now published on GitHub while keeping private Capsules separate.",
+
+"recommended_next_move": "Keep the public release synchronized with the current known-good repository state. Record physical demo behavior separately when tested, then expand additional Android build profiles deliberately.",
+    "failed_attempts": [
+      {
+        "summary": "Android stubs as javac bootclasspath did not provide LambdaMetafactory.",
+        "outcome": "Changed the defined Java profile to --release 8 plus Android compile classpath; real APK build passed.",
+        "avoid_repeating": true
+      }
+    ]
+  },
+  "context_snapshot": {
+    "do_not_break": [
+      "Keep public core and private runtime distinction explicit",
+      "Never collect production keys into Capsule packaging",
+      "Keep original Capsule unchanged"
+    ],
+    "decision_history": [
+      "The original grew from Ripple/HTML/Wakka work and a watch toolkit; the public candidate is separate.",
+      "Use existing Android tools acquired directly instead of reimplementing the SDK.",
+      "Exclude broad cached dependencies from first proved profile; add future modules deliberately.",
+      "Keep real alignment probes and source build evidence."
+    ],
+    "known_uncertainties": [
+      "Android example runtime not yet tested on device/emulator",
+      "No legal clearance is claimed for all omitted SDK/cache binaries"
+    ],
+    "recent_delta_from": "Owner-controlled Android Build Capsule v1.0",
+    "recent_delta": [
+      "Shareable MIT code core",
+      "Private direct SDK acquisition and read-only import",
+      "Original plain-Java/offline-HTML demo",
+      "Allowlist public packaging and test coverage"
+    ]
+  },
+  "context_routes": {
+    "always_read": [
+      "AI_START_HERE.txt",
+      "README_FIRST.txt",
+      "VERIFICATION.json"
+    ],
+    "by_task": [
+      {
+        "task": "Public release",
+        "read": [
+          "docs/COMPONENT_REVIEW.md",
+          "COMPONENT_AUDIT.json",
+          "PUBLIC_FILES.sha256.json"
+        ]
+      },
+      {
+        "task": "Compile a project",
+        "read": [
+          "README.md",
+          "abc.py",
+          "examples/CapsuleDemo/capsule-project.json"
+        ]
+      }
+    ],
+    "avoid_by_default": [
+      "Bulk generated SDK resources",
+      ".private/signing",
+      "Owner source unrelated to the current task"
+    ]
+  },
+  "open_questions": [
+    "Physical demo test",
+    "Future Gradle/Wear/NDK profiles"
+  ]
+}

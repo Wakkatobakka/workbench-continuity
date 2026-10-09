@@ -1,0 +1,63 @@
+{
+  "recorded_at": "2026-10-04T08:44:34.404574+00:00",
+  "status": "passed for the included plain-Java CapsuleDemo profile",
+  "core_version": "0.1.0",
+  "scope": "Owner Windows setup produced a runtime; this exact runtime was freshly extracted here and used to compile the included demo from source.",
+  "owner_report": "Public test completes perfectly.",
+  "baseline_public_asset": {
+    "filename": "WAKKA_Android_Build_Capsule_Public_v0.1.0.zip",
+    "sha256": "ff1b020168e0be1d3edcfe61649ec6a01d031c2c30ea703253c12015bfb9a6b6"
+  },
+  "windows_setup": {
+    "status": "completed on owner Windows PC",
+    "evidence": "Owner completion screenshot and the generated runtime ZIP",
+    "exact_windows_version": "not recorded",
+    "screenshot_sha256": "5f1d6c089810b9d348f40be13f0de8eb85948c421874d4b87d8a70e75fee4871",
+    "screenshot_published": false,
+    "runtime_created_at": "2026-10-04T08:32:17.9203671Z",
+    "license_acceptance": "Generated runtime metadata records the person clicking I accept during local Windows setup."
+  },
+  "runtime_input": {
+    "filename": "WAKKA_Chat_Runtime_20261004_033146.zip",
+    "bytes": 126210900,
+    "sha256": "44d02a8ad5bc35f0c5a0d64d7a7154df018ec637eecb65ed26a761aa50291a9e",
+    "zip_crc": "passed",
+    "paths": "forward-slash archive paths; no unsafe entries found",
+    "public_core_files_verified": 25,
+    "sdk_inventory_files_verified": 11331,
+    "private_runtime_published": false
+  },
+  "source_build": {
+    "built_at": "2026-10-04T08:39:06.749380+00:00",
+    "host": "Linux",
+    "architecture": "x86_64",
+    "javac": "javac 17.0.20",
+    "fresh_java_compilation": true,
+    "fresh_dex_compilation": true,
+    "apk_sha256": "0950ec975119dc6c12cafbc0e7bf8926ba3f497fef030f31975a0988e6b6a114",
+    "alignment": "passed",
+    "signature_schemes_verified": [
+      "v1",
+      "v2",
+      "v3"
+    ],
+    "detail": "PUBLIC_PATH_BUILD_EVIDENCE.json"
+  },
+  "isolation": {
+    "fresh_runtime_extraction": true,
+    "fresh_build_output": true,
+    "sdk_path_explicitly_set_to_uploaded_runtime": true,
+    "existing_private_capsule_used_for_build": false,
+    "new_chat_instance_or_fresh_host_claimed": false
+  },
+  "device_behavior": {
+    "android_emulator": "not run",
+    "physical_device": "not run"
+  },
+  "release_documentation_update": {
+    "build_code_changed": false,
+    "download_pins_changed": false,
+    "prebuilt_demo_apk_changed": false,
+    "baseline_assets_preserved": true
+  }
+}

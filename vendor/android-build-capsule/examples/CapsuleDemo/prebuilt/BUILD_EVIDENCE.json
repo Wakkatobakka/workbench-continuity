@@ -1,0 +1,40 @@
+{
+  "capsule_version": "0.1.0",
+  "built_at": "2026-10-04T07:44:40.852727+00:00",
+  "profile": "plain-java",
+  "project": "dev.wakka.capsuledemo",
+  "version": "0.1.0",
+  "apk": "dev.wakka.capsuledemo_v0.1.0.apk",
+  "apk_sha256": "396887aca9589a700576eef2f9a45bea6963b07859880071f1376caa16930f3d",
+  "fresh_java_compilation": true,
+  "fresh_dex_compilation": true,
+  "dex_sha256": [
+    "51997681a55786caffff6f0fa33f22d75db0159a3bdfbeabb630ebae28318c65"
+  ],
+  "signing": "local test identity; not for release updates",
+  "signature_verification": "Verifies\nVerified using v1 scheme (JAR signing): true\nVerified using v2 scheme (APK Signature Scheme v2): true\nVerified using v3 scheme (APK Signature Scheme v3): true\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\nSigner #1 certificate DN: CN=Local Capsule Demo, O=WAKKA\nSigner #1 certificate SHA-256 digest: c826c55eead3feb0d126d5fff8ba209b80bfb0d19aecd11a226d853200e20b95\nSigner #1 certificate SHA-1 digest: f3f747dea6f7bd96c8332a7a7313acbfe82e14ea\nSigner #1 certificate MD5 digest: 9eb7ee991dbaa95754855336b55be18d\nSigner #1 key algorithm: RSA\nSigner #1 key size (bits): 2048\nSigner #1 public key SHA-256 digest: 7c67bfbe1509b42b1e9d6a90259108e5575436c32b7a67d80736dc94ebc00df9\nSigner #1 public key SHA-1 digest: 1b0bfda7317a8eaa122775c9d5c6b7b4208b1f6c\nSigner #1 public key MD5 digest: 8557d13e8a4d993432acb2b68f6eb825",
+  "alignment": "4-byte entries and 16 KiB native-library alignment checked",
+  "apk_badging": "package: name='dev.wakka.capsuledemo' versionCode='1' versionName='0.1.0' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'\nsdkVersion:'23'\ntargetSdkVersion:'35'\napplication-label:'Capsule Demo'\napplication: label='Capsule Demo' icon=''\nlaunchable-activity: name='dev.wakka.capsuledemo.MainActivity'  label='' icon=''\nfeature-group: label=''\n  uses-feature: name='android.hardware.faketouch'\n  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'\nmain\nsupports-screens: 'small' 'normal' 'large' 'xlarge'\nsupports-any-density: 'true'\nlocales: '--_--'\ndensities: '160'",
+  "tools": {
+    "host": "Linux",
+    "architecture": "x86_64",
+    "java": "openjdk version \"17.0.20\" 2026-07-21\nOpenJDK Runtime Environment (build 17.0.20+8-1-24.04-Ubuntu)\nOpenJDK 64-Bit Server VM (build 17.0.20+8-1-24.04-Ubuntu, mixed mode, sharing)",
+    "javac": "javac 17.0.20",
+    "sdk_inventory": "verified (11331 files)",
+    "aapt": "Android Asset Packaging Tool, v0.2-11948202",
+    "aapt2": "Android Asset Packaging Tool (aapt) 2.19-11948202",
+    "d8": "D8 8.6.2-dev (build abaab469b5ebd4dd2bb91ba0ed6f45277faae4ca from go/r8bot (luci-r8-custom-ci-archive-0-77gl))",
+    "apksigner": "0.9",
+    "zipalign": "real alignment and verification passed"
+  },
+  "source_sha256": {
+    "AndroidManifest.xml": "0405d33a1e641d6716b1f9ebf3ca79a8f10f91570681a98d598e1d2371ae27d2",
+    "assets/index.html": "d194479c7b22b8130ab27650819772b84bccd82ae3275379861ad00a1b20d3ad",
+    "capsule-project.json": "03641711418b3551a492c313c4a449916a29f8341a27ea5f7a623fbe672416d1",
+    "res/values/strings.xml": "e731ae84a2aa56a7223043bd67ea4f4d230903bf92979345db25ce530c73b8fc",
+    "src/dev/wakka/capsuledemo/MainActivity.java": "17454df532125a7fa373044a7d95267957ad24aec54f4098d1f464ee23caf91c"
+  },
+  "android_emulator": "not run",
+  "physical_device": "not run",
+  "claim": "Source compiled, APK assembled, aligned, signed and verified; runtime behavior remains untested."
+}

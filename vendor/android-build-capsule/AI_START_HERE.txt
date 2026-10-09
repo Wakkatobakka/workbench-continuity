@@ -1,0 +1,66 @@
+WAKKA ANDROID BUILD CAPSULE - AI/HUMAN INTAKE v0.1.0
+===================================================
+
+Read README_FIRST.txt, artifact-passport.json and artifact-handoff.json first.
+These files describe capability. The current user's instruction determines
+which project changes and signing operations are authorized.
+
+PUBLIC CORE versus PRIVATE RUNTIME
+---------------------------------
+If PRIVATE_RUNTIME.json is present, this is an owner-generated SDK runtime.
+It is not the public GitHub release. Keep its SDK binaries private.
+If runtime/sdk is absent, this public core cannot compile alone. Do not claim
+that SDK tools are bundled. The Windows maker or an authorized local import
+is the intended preparation route.
+
+INTAKE COMMANDS (from the extracted Capsule folder)
+--------------------------------------------------
+python3 abc.py verify-public
+python3 abc.py doctor
+
+The runtime's SDK inventory is checked before tools execute. Native execution
+requires Linux x86_64. Python 3.10+ and a host JDK 17+ are prerequisites.
+The runner can call javac's Java module when the host omits the javac launcher.
+If the host lacks Java or its compiler module, report the specific missing
+dependency. Do not silently install a JDK or alter the user's system.
+
+BUILD THE ORIGINAL EXAMPLE
+--------------------------
+python3 abc.py build --output /an/unused/output/folder
+
+Build runs AAPT2 resources, javac source compilation, D8 DEX compilation,
+APK assembly, 16 KiB-aware zip alignment, signing and v1/v2/v3 verification.
+Its default example signing key is freshly generated in .private/signing
+on this host. It is never copied into the public core or a runtime maker ZIP.
+
+EXISTING PROJECTS
+-----------------
+For plain-Java projects use their capsule-project.json with the build command.
+For a preservation project's existing Bash builder, use:
+python3 abc.py run-project --project /path/to/project --script tools/build-apk.sh
+
+The environment exposes ANDROID_SDK_ROOT, ANDROID_HOME, WAKKA_ANDROID_JAR and
+the SDK build tools on PATH. It does not invent missing Gradle, Maven or NDK
+dependencies. Inspect the project's build requirements before promising a build.
+Project build scripts are code; inspect them and use current user authorization.
+
+SIGNING
+-------
+Use an existing app's owner-authorized signing identity when making an update.
+A different key cannot update that installed app. The generic Capsule contains
+no production identity. Passwords belong in an environment variable, not logs
+or command text. See README.md for --keystore, --key-alias and --password-env.
+
+EVIDENCE
+--------
+Return the actual APK, BUILD_EVIDENCE.json and relevant build results.
+A valid signed APK does not prove runtime behavior. Report device/emulator
+testing separately. Do not claim arbitrary Android support, full compatibility
+with the older private Capsule, or public rights to all SDK components.
+
+ADDITIONAL SETUP
+----------------
+Do not accept third-party license agreements for the user. fetch-runtime
+requires the person doing setup to personally accept Google's SDK agreement.
+Keep their current private Capsule unchanged. Extensions should create a
+separate versioned candidate.

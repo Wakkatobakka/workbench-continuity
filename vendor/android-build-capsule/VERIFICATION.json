@@ -1,0 +1,110 @@
+{
+  "version": "0.1.0",
+  "verified_at": "2026-10-04T08:44:34.404574+00:00",
+  "status": "public Windows setup and generated-runtime source build confirmed; Android device tests pending",
+  "public_boundary": {
+    "sdk_binaries_in_public_core": false,
+    "gradle_or_gms_cache_in_public_core": false,
+    "production_signing_identity_in_public_core": false,
+    "only_apk": "original CapsuleDemo example",
+    "core_license": "MIT"
+  },
+  "original_preservation": {
+    "before_sha256": "4584b972d8ebb2f24ace919077b82aebceccf257520fde4cbbaa5fbf12fe40ee",
+    "after_sha256": "4584b972d8ebb2f24ace919077b82aebceccf257520fde4cbbaa5fbf12fe40ee",
+    "identical": true,
+    "size_bytes": 484190985
+  },
+  "source_code_sha256": {
+    "abc.py": "a05d8fcccc8312fafca091b5705e58418271189272ec3bf0ea5eca13e6abd3cb",
+    "tools/Make-Chat-Capsule.ps1": "b9f530659e67b0fca0aa99e0d555b3da9885957bda1a53359aa024bf5d9f13a1",
+    "tools/package_public.py": "5a0fa4d59433278dff0a70b8e028b15ffa06df9e85d1974e8484a968b05efa63",
+    "examples/CapsuleDemo/src/dev/wakka/capsuledemo/MainActivity.java": "17454df532125a7fa373044a7d95267957ad24aec54f4098d1f464ee23caf91c"
+  },
+  "sdk_free_unit_tests": {
+    "passed": 13,
+    "failed": 0,
+    "scope": [
+      "ZIP traversal/drive/symlink rejection",
+      "Windows path normalization",
+      "version/project path boundaries",
+      "explicit SDK agreement gating",
+      "failed download/checksum handling",
+      "public allowlist excludes private keys",
+      "transferred executable bit restoration",
+      "version-preserving runtime archive filenames"
+    ],
+    "checked_at": "2026-10-04T07:46:54.321529+00:00"
+  },
+  "official_acquisition_checks": [
+    {
+      "kind": "platform",
+      "official_sha256": "0988cacad01b38a18a47bac14a0695f246bc76c1b06c0eeb8eb0dc825ab0c8e0",
+      "sha1_matches_published": true,
+      "layout_valid": true,
+      "core_binary_matches_owner_copy": true
+    },
+    {
+      "kind": "build-tools",
+      "official_sha256": "bd3a4966912eb8b30ed0d00b0cda6b6543b949d5ffe00bea54c04c81e1561d88",
+      "sha1_matches_published": true,
+      "layout_valid": true,
+      "core_binary_matches_owner_copy": true
+    }
+  ],
+  "fresh_runtime_build": {
+    "runtime_was_zipped_then_freshly_extracted": true,
+    "sdk_inventory_verified": true,
+    "all_sdk_inputs_local": true,
+    "fresh_java_compilation": true,
+    "fresh_dex_compilation": true,
+    "apk_sha256": "396887aca9589a700576eef2f9a45bea6963b07859880071f1376caa16930f3d",
+    "apk_archive_valid": true,
+    "signature_schemes": [
+      "v1",
+      "v2",
+      "v3"
+    ],
+    "alignment": "zipalign -c -P 16 4 passed",
+    "detail": "examples/CapsuleDemo/prebuilt/BUILD_EVIDENCE.json"
+  },
+  "project_script_adapter": {
+    "status": "passed",
+    "fixture": "examples/CapsuleDemo/tools/build-apk.sh",
+    "javac_and_jar_module_shims": "passed",
+    "fresh_signed_apk_produced": true,
+    "scope": "the supplied example Bash builder; not every historical preservation project"
+  },
+  "passport_0_7": {
+    "dependency_free_original_validator": "passed with expected ai-draft review notice",
+    "owner_review": "pending"
+  },
+  "powershell": {
+    "syntax_parser": "PowerShell 7.5.2 official release; checksum matched published hashes.sha256",
+    "syntax": "passed",
+    "windows_forms_ui": "owner Windows setup completed; completion screenshot and generated runtime supplied",
+    "actual_windows_download_and_zip_flow": "completed on owner Windows PC; generated runtime source-build follow-up passed"
+  },
+  "runtime_tests": {
+    "android_emulator": "not run",
+    "physical_android_device": "not run"
+  },
+  "known_limitations": [
+    "First build profile is plain Java/resources/offline HTML on Linux x86_64.",
+    "No automatic JDK installation; host JDK 17+ with compiler module required.",
+    "Gradle/AGP/Wear/Kotlin/Compose/NDK/PS2 tooling is not bundled or validated.",
+    "Generated SDK runtime is kept separate and is not cleared for public redistribution."
+  ],
+  "baseline_verified_at": "2026-10-04T07:46:54.321529+00:00",
+  "public_setup_followup": {
+    "status": "passed for the included CapsuleDemo",
+    "receipt": "docs/PUBLIC_PATH_VERIFICATION.json",
+    "build_evidence": "docs/PUBLIC_PATH_BUILD_EVIDENCE.json",
+    "runtime_sha256": "44d02a8ad5bc35f0c5a0d64d7a7154df018ec637eecb65ed26a761aa50291a9e",
+    "apk_sha256": "0950ec975119dc6c12cafbc0e7bf8926ba3f497fef030f31975a0988e6b6a114",
+    "fresh_runtime_extraction": true,
+    "sdk_inventory_files_verified": 11331,
+    "windows_version": "not recorded",
+    "android_device_behavior": "not tested"
+  }
+}

@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'">
+<title>Capsule Demo</title><style>
+*{box-sizing:border-box}body{margin:0;padding:28px;color:#dceaf2;background:#07111b;font:17px/1.55 system-ui,sans-serif}
+.tag{color:#56e2f2;font-size:13px;letter-spacing:.16em}h1{font-size:38px;line-height:1.1;margin:16px 0}p{max-width:36em;color:#afc3d1}
+button{display:block;margin:28px 0;padding:16px 22px;border:0;border-radius:12px;background:#56e2f2;color:#07111b;font-weight:700;font-size:17px}
+.note{font-size:14px;border-top:1px solid #263846;padding-top:20px}
+</style></head><body><div class="tag">WAKKA / BUILD CAPSULE</div><h1>Give chat hands.</h1>
+<p>This small app combines an offline HTML page with a native Android counter.</p>
+<button id="increment">Increase native counter</button><p id="result" role="status">Tap the button and watch the counter above this page.</p>
+<p class="note">The example needs no account, network connection or personal files.</p>
+<script>document.getElementById('increment').addEventListener('click',function(){
+if(window.CapsuleNative){CapsuleNative.increment();document.getElementById('result').textContent='Button sent to native Java.';}
+else{document.getElementById('result').textContent='Open the Android APK to use the native counter.';}
+});</script></body></html>

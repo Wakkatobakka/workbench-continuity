@@ -1,0 +1,69 @@
+{
+  "audited_at": "2026-10-04",
+  "original_capsule_sha256": "4584b972d8ebb2f24ace919077b82aebceccf257520fde4cbbaa5fbf12fe40ee",
+  "original_capsule_bytes": 484190985,
+  "original_modified": false,
+  "classification": "file inventory and v0.1 public packaging decisions; not a full legal clearance of omitted components",
+  "payloads": [
+    {
+      "payload": "WAKKA_Android_Build_Toolkit_20260917_223316.zip",
+      "sha256": "58c95925b4c2cf764fdc679e5858ca14ca2ac29934ad822833cb2aad5872b40d",
+      "zip_bytes": 429976626,
+      "groups": {
+        "Collector metadata": {
+          "files": 2,
+          "uncompressed_bytes": 33103
+        },
+        "Windows SDK build tools": {
+          "files": 170,
+          "uncompressed_bytes": 144869620
+        },
+        "SDK license acceptance records": {
+          "files": 1,
+          "uncompressed_bytes": 42
+        },
+        "Windows platform tools": {
+          "files": 15,
+          "uncompressed_bytes": 17548112
+        },
+        "Android SDK platform": {
+          "files": 11163,
+          "uncompressed_bytes": 102608733
+        },
+        "Gradle distribution": {
+          "files": 1,
+          "uncompressed_bytes": 136983045
+        },
+        "Other Gradle cache/dependencies": {
+          "files": 3258,
+          "uncompressed_bytes": 339675331
+        },
+        "Google service Maven artifacts": {
+          "files": 12,
+          "uncompressed_bytes": 1554825
+        }
+      }
+    },
+    {
+      "payload": "WAKKA_Android_Linux_Build_Supplement_v1.1.zip",
+      "sha256": "f1f6ba4c5fab27ddbcaf749b1245c5d5e36a1b39d6548fd5569c32aaf02ba884",
+      "zip_bytes": 60379728,
+      "groups": {
+        "Wakka Linux scripts and metadata": {
+          "files": 5,
+          "uncompressed_bytes": 5264
+        },
+        "Linux SDK build tools": {
+          "files": 168,
+          "uncompressed_bytes": 153245182
+        }
+      }
+    }
+  ],
+  "public_vendor_binary_count": 0,
+  "public_key_files": 0,
+  "included_apk": "original MIT example only",
+  "public_boundary": "Wakka-owned core/code/example; user-acquired SDK runtime separate",
+  "retained_capability": "plain-Java Android resource/DEX/APK pipeline; original underlying Android tools used locally",
+  "deferred_capability": "cached Gradle/Wear/AGP and separate NDK/PS2; not included in this first public profile"
+}

@@ -1,0 +1,12 @@
+{
+  "profile": "plain-java",
+  "package": "dev.wakka.capsuledemo",
+  "version_name": "0.1.0",
+  "version_code": 1,
+  "min_sdk": 23,
+  "target_sdk": 35,
+  "sources": "src",
+  "resources": "res",
+  "assets": "assets",
+  "manifest": "AndroidManifest.xml"
+}
