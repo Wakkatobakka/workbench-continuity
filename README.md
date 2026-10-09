@@ -1,5 +1,7 @@
 # Workbench Continuity
 
+![Workbench Continuity — Give All Chats Hands](./Workbench_Continuity_GitHub_Social_Preview_1280x640.jpg)
+
 Carry the project, the tools, and what you were doing into the next chat.
 
 Workbench keeps your actual source, APKs, attachments, decisions, build results and next action together. It prepares a working bundle for another chat, including Claude PDF carriers or Grok ZIP carriers. The Android app also signs returned APKs privately on your device using your existing project key.
