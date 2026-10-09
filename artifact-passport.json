@@ -1,0 +1,201 @@
+{
+  "$schema": "urn:artifact-passport:schema:0.7",
+  "spec_version": "0.7",
+  "passport_id": "wakka.workbench.continuity.standalone",
+  "artifact": {
+    "name": "Workbench Continuity",
+    "version": "1.2.0",
+    "kind": "application",
+    "description": "Carry project source, state and build tools between chats; privately sign returned APKs on Android.",
+    "updated_at": "2026-10-07T12:19:41Z",
+    "tags": [
+      "android",
+      "continuity",
+      "chat-build-tools"
+    ]
+  },
+  "intent": {
+    "purpose": "Keep actual working projects and their next actions portable across chats, with integrated first-time build runtime setup.",
+    "audiences": [
+      "Project owners",
+      "Continuing collaborators"
+    ],
+    "success_criteria": [
+      "Source and notes survive work-packet round trips.",
+      "Both emitted runtime carrier routes reconstruct verified tools and build the current owned example.",
+      "Signing keys remain outside project and AI packets."
+    ],
+    "out_of_scope": [
+      "Universal Android support",
+      "Claiming phone behavior from compilation."
+    ]
+  },
+  "operation": {
+    "entry_points": [
+      {
+        "path": "README.md",
+        "role": "Public start and product guide",
+        "open_with": "Markdown reader"
+      },
+      {
+        "path": "dist/Workbench_Continuity_v1.2.0_PUBLIC.html",
+        "role": "Offline desktop interface",
+        "open_with": "Web browser"
+      },
+      {
+        "path": "SETUP_WORKBENCH.bat",
+        "role": "First-time Windows setup",
+        "open_with": "Windows"
+      }
+    ],
+    "environment": [
+      "Desktop browser for HTML edition",
+      "Android 9+ for APK edition",
+      "Windows PowerShell for one-time runtime collection",
+      "Linux x86_64, Python 3.10+, JDK 17+ for builds"
+    ],
+    "network_policy": "optional",
+    "network_notes": "First-time setup downloads pinned official SDK archives after the person chooses to accept terms. Workbench UI and Android app operate locally without network permission.",
+    "dependencies": [
+      {
+        "name": "Per-person API 35 / Build Tools 35.0.0 runtime",
+        "requirement": "Generated with included setup or existing public ABC runtime",
+        "purpose": "Carry build tools to supported chat execution hosts"
+      },
+      {
+        "name": "Public apksig Maven dependency",
+        "requirement": "com.android.tools.build:apksig:8.6.1; Apache-2.0",
+        "purpose": "Private native Android APK signing and verification"
+      }
+    ]
+  },
+  "structure": {
+    "source_of_truth": [
+      {
+        "path": "src",
+        "role": "Project engine, UI and public runtime adapter"
+      },
+      {
+        "path": "android",
+        "role": "Native shell and private signer"
+      },
+      {
+        "path": "vendor/android-build-capsule",
+        "role": "Pinned public MIT setup and runner"
+      },
+      {
+        "path": "tools",
+        "role": "Source assembly and build helpers"
+      }
+    ],
+    "generated_outputs": [
+      {
+        "path": "dist",
+        "role": "Public HTML and included setup ZIP"
+      }
+    ],
+    "protected_items": [],
+    "ignore": [
+      ".private",
+      "build",
+      "__pycache__"
+    ]
+  },
+  "constraints": {
+    "allowed_actions": [
+      "Inspect, edit, build and publish owned public code."
+    ],
+    "must": [
+      "Preserve current project and signing behavior.",
+      "Keep signing credentials and generated SDK runtimes private.",
+      "Record fresh proof separately from historical tests."
+    ],
+    "must_not": [
+      "Include owner-private carriers or fixture corpus in public packages.",
+      "Claim a device or external AI test that was not observed."
+    ],
+    "preserve": [
+      "Stable Passport identity",
+      "Current-project source precedence",
+      "Native signing boundary"
+    ],
+    "data_classification": "public",
+    "data_handling": {
+      "may_leave_device": "yes",
+      "approved_contexts": [
+        "Public GitHub repository",
+        "Owner-selected development chat"
+      ],
+      "redaction_required": false,
+      "notes": "Public source contains no SDK runtime or owner signing key."
+    }
+  },
+  "procedures": {
+    "setup": [
+      "Read README_FIRST.txt. Run SETUP_WORKBENCH.bat on Windows if you choose to generate tools."
+    ],
+    "edit": [
+      "Continue existing source. Preserve native signing and original project engine."
+    ],
+    "build": [
+      "Follow BUILD.md; retain release key separately outside the repository."
+    ],
+    "verify": [
+      "Run documented checks and inspect VERIFICATION.md."
+    ],
+    "release": [
+      "Publish prepared public source and release assets."
+    ],
+    "recovery": [
+      "Open an exported project work packet and load the retained runtime ZIP."
+    ]
+  },
+  "verification": {
+    "checks": [
+      {
+        "id": "workflow",
+        "description": "SDK-free packet and signing UI contracts",
+        "method": "command",
+        "expected": "Documented Node and Python tests pass",
+        "required": true
+      },
+      {
+        "id": "carriers",
+        "description": "Actual emitted PDF/ZIP tools and current source recover and compile",
+        "method": "command",
+        "expected": "Real-runtime roundtrip report passes for Claude and Grok",
+        "required": true
+      },
+      {
+        "id": "phone",
+        "description": "Fresh public APK behavior",
+        "method": "interaction",
+        "expected": "Separately observe project intake, both exports and private signer on Android",
+        "required": false
+      }
+    ]
+  },
+  "authority": {
+    "owner": "Wakka",
+    "approvers": [
+      "Wakka"
+    ],
+    "change_policy": "Make only changes needed for the authorized public version; preserve working behavior."
+  },
+  "handoff": {
+    "start_here": "Read README_FIRST.txt, BUILD.md, and artifact-handoff.json.",
+    "safe_first_actions": [
+      "Inspect public source and verification scope.",
+      "Continue existing behavior; keep private material separate."
+    ],
+    "known_limitations": [
+      "No fresh physical-device or external AI chat run in this release preparation.",
+      "Receiving chats need code execution and the documented host profile."
+    ],
+    "open_questions": []
+  },
+  "review": {
+    "status": "ai-draft",
+    "notes": "Public preparation; host and emitted-route checks passed. Physical-device observations remain separate."
+  }
+}

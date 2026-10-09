@@ -1,0 +1,51 @@
+{
+  "workbench_version": "1.2.0",
+  "library_sha256": {
+    "apksig-35.0.0.jar": "c070ed1394629d74641aa0906f60b2ffa1ee77e6366a1f93437f59717b1aeb89"
+  },
+  "capsule_version": "0.2.0-preview.3",
+  "profile": "plain-java",
+  "project": "dev.wakka.continuity.publicv12",
+  "version": "1.2.0",
+  "apk_sha256": "0363eae16e3a427bfc07446af1d01730efd27a4b099eb9e9797caa72c454645c",
+  "fresh_java_compilation": true,
+  "fresh_dex_compilation": true,
+  "dex_sha256": [
+    "7bf7814fb79b763893b494cc303dd8a24d84cc0b284f4ee870a17ff80bd4ba46"
+  ],
+  "signing": "owner-supplied identity",
+  "signature_verification": "Verifies\nVerified using v1 scheme (JAR signing): true\nVerified using v2 scheme (APK Signature Scheme v2): true\nVerified using v3 scheme (APK Signature Scheme v3): true\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\nSigner #1 certificate DN: CN=Workbench Continuity Public, O=WAKKA\nSigner #1 certificate SHA-256 digest: d79a38e6019df7a40190b188503007a20d8ff1f644e9f96886cac29f786c3ae9\nSigner #1 certificate SHA-1 digest: b32396fc3d5ce26a098a892b2b564a971bcc9f39\nSigner #1 certificate MD5 digest: f9c613f40be5744578aeb7120c8461af\nSigner #1 key algorithm: RSA\nSigner #1 key size (bits): 4096\nSigner #1 public key SHA-256 digest: d44a11a15a11505aa4036a8d4cbe070de3c20e16bd46d1eeb2b2ec6829759c0c\nSigner #1 public key SHA-1 digest: 499e0cc423668c5db18879a2aede99bf523f29b4\nSigner #1 public key MD5 digest: c2bda62871c9cfd54af690e0a3c8d45e",
+  "signature_scheme_probe_min_sdk": 23,
+  "application_min_sdk": 28,
+  "alignment": "4-byte entries and 16 KiB native-library alignment checked",
+  "apk_badging": "package: name='dev.wakka.continuity.publicv12' versionCode='3' versionName='1.2.0' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'\nsdkVersion:'28'\ntargetSdkVersion:'35'\napplication-label:'Workbench Continuity 1.2'\napplication-icon-160:'res/mipmap-anydpi-v26/ic_launcher.xml'\napplication-icon-240:'res/mipmap-anydpi-v26/ic_launcher.xml'\napplication-icon-320:'res/mipmap-anydpi-v26/ic_launcher.xml'\napplication-icon-480:'res/mipmap-anydpi-v26/ic_launcher.xml'\napplication-icon-640:'res/mipmap-anydpi-v26/ic_launcher.xml'\napplication-icon-65534:'res/mipmap-anydpi-v26/ic_launcher.xml'\napplication: label='Workbench Continuity 1.2' icon='res/mipmap-anydpi-v26/ic_launcher.xml'\nlaunchable-activity: name='dev.wakka.continuity.v12.MainActivity'  label='' icon=''\nfeature-group: label=''\n  uses-feature: name='android.hardware.faketouch'\n  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'\nmain\nother-activities\nsupports-screens: 'small' 'normal' 'large' 'xlarge'\nsupports-any-density: 'true'\nlocales: '--_--'\ndensities: '160' '240' '320' '480' '640' '65534'",
+  "source_sha256": {
+    "AndroidManifest.xml": "c9e5f5e0f111dc8423e7bcef42e6400fa6af51dec661ed1a538f5298e114ba66",
+    "assets/index.html": "0112d4cab0d880111c60927749dcb1271bc3c613355a05cc60000b96d308a4f4",
+    "assets/third-party/APACHE-2.0.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "assets/third-party/NOTICE.txt": "70ab250cf0d1a2d439f557c785fd0c2520e790e48b521305426f973da95a79f1",
+    "assets/third-party/README.txt": "78b5a55e1b6050cf4c0fe97b75596986957fc62d337c43cec70c24cadc46d22b",
+    "capsule-project.json": "17deaf8376f1c113f63be770a63b070d10ef45c0ea309b8e0a6f2694579fcf4a",
+    "res/drawable/continuity_icon_background.xml": "4e7682a77abd46756a74a507c00136abbe00d9607fdf6aad1ef675c1d10aa825",
+    "res/drawable/continuity_icon_foreground.xml": "bfff80ec9ca1f488c3ddc29eb757c2170452ad572f0b30e28c1bae9ce5bdcd7e",
+    "res/mipmap-anydpi-v26/ic_launcher.xml": "72180c5a25a5ff0139647e49b6afe585bec05cb2d0abb8a7cf08ae3f7848750e",
+    "res/mipmap-hdpi/ic_launcher.png": "2ca8b21a7241b904c766d758d43ff3e51ef4b5b68b836badfaab1a3bc45bd952",
+    "res/mipmap-mdpi/ic_launcher.png": "83f6a70a3ff531d4e7ca49d7635ee47acfbf1eaa4620bfb9c1cf972db030efb2",
+    "res/mipmap-xhdpi/ic_launcher.png": "a3d49581abbef85a81f07dddbe9a169c5895975993716fd22448b353754dfcd2",
+    "res/mipmap-xxhdpi/ic_launcher.png": "0496571204754b37069bdb382b55fb9e58fec333da2b43e04a64fba6ad371142",
+    "res/mipmap-xxxhdpi/ic_launcher.png": "6e2a2379f4e01a7911e4e2204bdeab1c2147f36737fc19990329cedcf831aeb4",
+    "res/values/strings.xml": "b96ea9cdfedf6d8b4ceaa7a62f9ff87c7e23508e33243b246a4e1472e4d922b1",
+    "src/dev/wakka/continuity/signing/ApkManifest.java": "b921a053ad6afa80f9d197b4430d5853e37b663caaf66c6071b9144204fd66bc",
+    "src/dev/wakka/continuity/signing/LocalApkSigner.java": "87341fbad067839e5f38e4df4b4e4893454428c78c186b51d3b16cf0adce4679",
+    "src/dev/wakka/continuity/signing/LocalKeyStore.java": "241f319dbae3e0aa3ebbb17162b2b9c794e711a50a5f38f611f4708f52f73857",
+    "src/dev/wakka/continuity/v12/LocalSigningActivity.java": "6386a7b7ae777262f62cae32cac2b2c75f6468eb9edd881fa786215fedf74b4c",
+    "src/dev/wakka/continuity/v12/MainActivity.java": "008245e8a40eb9a43d0ab22028d405901f0163104a75c577781570439089da8e"
+  },
+  "android_emulator": "not run",
+  "physical_device": "not run",
+  "claim": "Source compiled, APK assembled, aligned, signed and verified; runtime behavior remains untested.",
+  "permissions": "package: dev.wakka.continuity.publicv12\n",
+  "assets_match_current_public_source": true,
+  "contains_sdk_runtime": false,
+  "contains_private_signing_key": false
+}

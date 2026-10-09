@@ -1,0 +1,42 @@
+{
+  "format": "workbench-public-runtime-roundtrip/1",
+  "passed": true,
+  "realSDK": true,
+  "checks": [
+    {
+      "name": "Public product and practice-project Passport/handoff context validate",
+      "passed": true
+    },
+    {
+      "name": "Runtime loads outside the project and preserves every source byte",
+      "passed": true,
+      "sdkFiles": 171,
+      "realSDK": true
+    },
+    {
+      "name": "Normalized runtime contains only pinned SDK files and trusted public core",
+      "passed": true
+    },
+    {
+      "name": "Invalid runtime is rejected without replacing the last valid runtime",
+      "passed": true
+    },
+    {
+      "name": "claude emitted route recovers the current project and builds its actual Java APK",
+      "passed": true,
+      "uploadFiles": 6,
+      "apkSha256": "c8f9206e98af2cb1f8655cca6c301bc37a98aa2b36156ac76d7eb6dd8c032c7a"
+    },
+    {
+      "name": "grok emitted route recovers the current project and builds its actual Java APK",
+      "passed": true,
+      "uploadFiles": 8,
+      "apkSha256": "303e8beb7391d34ba6919217f61ad9dff4c1aa4b0eca04b07e4b7ac72ec245fd"
+    },
+    {
+      "name": "Saved work packet reopens with the latest decisions and next action",
+      "passed": true
+    }
+  ],
+  "scope": "Actual emitted HTML JavaScript and PDF/ZIP extraction; optional actual SDK source builds. No physical device or external AI chat run."
+}

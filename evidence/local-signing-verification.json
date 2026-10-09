@@ -1,0 +1,114 @@
+{
+  "format": "continuity-local-signing-qa/1",
+  "passed": true,
+  "signing_source_sha256": {
+    "android/src/dev/wakka/continuity/signing/ApkManifest.java": "b921a053ad6afa80f9d197b4430d5853e37b663caaf66c6071b9144204fd66bc",
+    "android/src/dev/wakka/continuity/signing/LocalApkSigner.java": "87341fbad067839e5f38e4df4b4e4893454428c78c186b51d3b16cf0adce4679",
+    "android/src/dev/wakka/continuity/signing/LocalKeyStore.java": "241f319dbae3e0aa3ebbb17162b2b9c794e711a50a5f38f611f4708f52f73857"
+  },
+  "maximum_java_heap": "host default; not constrained",
+  "tests": [
+    {
+      "test": "JKS and PKCS12 key loading",
+      "passed": true,
+      "store_formats": [
+        "JKS",
+        "PKCS12"
+      ]
+    },
+    {
+      "test": "Wrong store password rejected",
+      "passed": true,
+      "store_formats": [
+        "JKS",
+        "PKCS12"
+      ]
+    },
+    {
+      "test": "No reference does not claim update compatibility",
+      "passed": true,
+      "normal_update_metadata_compatible": false
+    },
+    {
+      "test": "Returned debug APK re-signed with original owner identity",
+      "passed": true,
+      "normal_update_metadata_compatible": true,
+      "content_preserved": true,
+      "native_library_preserved": true,
+      "output_signature": {
+        "sha256": "976545a6685ffe31caf69a91abf8d216defbaa2c63025703b25ef2a5e109b5cb",
+        "certificate_sha256": "207added0181802f01572980bcef62555b33c97979fe43f975ed18b0b3bad0c4",
+        "verified_schemes": {
+          "v1": true,
+          "v2": true,
+          "v3": true
+        }
+      }
+    },
+    {
+      "test": "PKCS12 owner signing verified",
+      "passed": true,
+      "output_signature": {
+        "sha256": "1859248ad5519f6751d0235d5e7c344a49830055cd7631a4b9f829c82d6536db",
+        "certificate_sha256": "5687d0f05cd48b892ea7261a13467dd238c46df35ffcd81082f428207fc7924a",
+        "verified_schemes": {
+          "v1": true,
+          "v2": true,
+          "v3": true
+        }
+      }
+    },
+    {
+      "test": "same version supports normal replacement",
+      "passed": true,
+      "normal_update_metadata_compatible": true,
+      "signed_artifact_verified": true
+    },
+    {
+      "test": "lower version is not an update",
+      "passed": true,
+      "normal_update_metadata_compatible": false,
+      "signed_artifact_verified": true
+    },
+    {
+      "test": "wrong package is not an update",
+      "passed": true,
+      "normal_update_metadata_compatible": false,
+      "signed_artifact_verified": true
+    },
+    {
+      "test": "different signer is not an update",
+      "passed": true,
+      "normal_update_metadata_compatible": false,
+      "signed_artifact_verified": true
+    },
+    {
+      "test": "Wrong alias/key password/store password leave no output",
+      "passed": true,
+      "rejected_cases": 3
+    },
+    {
+      "test": "Split APK is rejected by single-APK signing flow",
+      "passed": true,
+      "output_absent": true
+    },
+    {
+      "test": "Truncated binary manifest is rejected",
+      "passed": true,
+      "output_absent": true
+    },
+    {
+      "test": "Mismatched binary manifest element is rejected",
+      "passed": true,
+      "output_absent": true
+    }
+  ],
+  "scope": "Host JVM execution of Android-independent signing core with binary Android manifests; external SDK apksigner v1/v2/v3 verification; actual selected owner inputs when --real-projects is provided.",
+  "limitations": [
+    "No physical Android device installation/update was executed.",
+    "Native Android UI, SAF, keystore-provider behavior and device storage handling require device verification.",
+    "Java heap constraints do not measure total process memory, native buffers or mapped file storage.",
+    "Metadata compatibility is a necessary update check; Android package/device policy can impose additional installation constraints."
+  ],
+  "credentials": "Temporary keys and owner input credentials were used privately and removed from test staging. Reports contain public hashes and certificates only."
+}

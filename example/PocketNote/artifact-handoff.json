@@ -1,0 +1,49 @@
+{
+  "$schema": "urn:artifact-passport:handoff-schema:0.7",
+  "spec_version": "0.7",
+  "passport_id": "wakka.workbench.continuity.pocketnote",
+  "artifact": {
+    "name": "Pocket Note",
+    "version": "1.0.0"
+  },
+  "updated_at": "2026-10-06T03:02:41.207693+00:00",
+  "review": {
+    "status": "ai-draft",
+    "notes": "New owned sample; no build or phone result is claimed."
+  },
+  "working_state": {
+    "current_status": "New example source ready to carry; no build or phone result recorded.",
+    "current_known_good": "Source example only; no independent build or device claim.",
+    "last_material_change": "Created a small standalone example for packet intake and destination export.",
+    "current_objective": "Carry this project into the next supported build chat.",
+    "recommended_next_move": "Change the visible note if desired, build this exact current source using the supplied plain-Java tools, and return the signed APK and result packet.",
+    "failed_attempts": []
+  },
+  "context_snapshot": {
+    "do_not_break": [
+      "Keep project identity and current state adjacent to source.",
+      "Keep build verification separate from phone observations."
+    ],
+    "decision_history": [
+      "Use a tiny plain-Java sample for the first standalone packet."
+    ],
+    "known_uncertainties": [
+      "Device behavior has not been tested."
+    ],
+    "recent_delta_from": "New sample",
+    "recent_delta": [
+      "Created example source and paired Passport/current handoff."
+    ]
+  },
+  "context_routes": {
+    "always_read": [
+      "artifact-passport.json",
+      "artifact-handoff.json",
+      "README.txt",
+      "capsule-project.json"
+    ],
+    "by_task": [],
+    "avoid_by_default": []
+  },
+  "open_questions": []
+}

@@ -1,0 +1,438 @@
+{
+  ".github/workflows/checks.yml": {
+    "size_bytes": 574,
+    "sha256": "43a650aa1f3b299a799241d2f83e765490aeafa69f3f354846d7886c508e6668"
+  },
+  ".gitignore": {
+    "size_bytes": 261,
+    "sha256": "bb5506b3d46f6813d424fabffba2451933f8ea08a9e951071324c64477221834"
+  },
+  "BUILD.md": {
+    "size_bytes": 2863,
+    "sha256": "e46e22452ee1337da6411e17046a02dd98b9f3917808b3787c2603baa298fbdc"
+  },
+  "LICENSE": {
+    "size_bytes": 1062,
+    "sha256": "a8c0a87b7ae46e5f8a00218ddc281a61e4d1b83c440e9397964ef4ce28cc2e63"
+  },
+  "PRIVACY.md": {
+    "size_bytes": 1675,
+    "sha256": "00f3ef71508594353de8232df2107ae1f6eaa71055ef38ab63ee88d997af9915"
+  },
+  "README.md": {
+    "size_bytes": 3768,
+    "sha256": "6422c2c76d52145b3e3b99c7fceecdd32414c141b5e4139d1ea8d0bc9fe5928a"
+  },
+  "README_FIRST.txt": {
+    "size_bytes": 1413,
+    "sha256": "1ff4e1459da511ac84dcf29c6ebeb01080191bfc72935617b3cba8dcd59dc384"
+  },
+  "RELEASE_NOTES.md": {
+    "size_bytes": 1129,
+    "sha256": "a940ef1bd764184da02912c4d01e5be544e827e8dee986adf8b713a0298db5a7"
+  },
+  "SETUP_WORKBENCH.bat": {
+    "size_bytes": 459,
+    "sha256": "7f9cebf2b913cdc1b02f64b43c3b4607f56f57d783a6222531d17c60923c730a"
+  },
+  "VERIFICATION.md": {
+    "size_bytes": 3366,
+    "sha256": "aac871fa59d543ccec1ee3b7dec2899f264629cfc4e7745b36fab1017126ee62"
+  },
+  "android/AndroidManifest.xml": {
+    "size_bytes": 1475,
+    "sha256": "c9e5f5e0f111dc8423e7bcef42e6400fa6af51dec661ed1a538f5298e114ba66"
+  },
+  "android/assets/index.html": {
+    "size_bytes": 518735,
+    "sha256": "0112d4cab0d880111c60927749dcb1271bc3c613355a05cc60000b96d308a4f4"
+  },
+  "android/assets/third-party/APACHE-2.0.txt": {
+    "size_bytes": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "android/assets/third-party/NOTICE.txt": {
+    "size_bytes": 748,
+    "sha256": "70ab250cf0d1a2d439f557c785fd0c2520e790e48b521305426f973da95a79f1"
+  },
+  "android/assets/third-party/README.txt": {
+    "size_bytes": 118,
+    "sha256": "78b5a55e1b6050cf4c0fe97b75596986957fc62d337c43cec70c24cadc46d22b"
+  },
+  "android/capsule-project.json": {
+    "size_bytes": 263,
+    "sha256": "17deaf8376f1c113f63be770a63b070d10ef45c0ea309b8e0a6f2694579fcf4a"
+  },
+  "android/libs/apksig-35.0.0.jar": {
+    "size_bytes": 506969,
+    "sha256": "c070ed1394629d74641aa0906f60b2ffa1ee77e6366a1f93437f59717b1aeb89"
+  },
+  "android/res/drawable/continuity_icon_background.xml": {
+    "size_bytes": 387,
+    "sha256": "4e7682a77abd46756a74a507c00136abbe00d9607fdf6aad1ef675c1d10aa825"
+  },
+  "android/res/drawable/continuity_icon_foreground.xml": {
+    "size_bytes": 1901,
+    "sha256": "bfff80ec9ca1f488c3ddc29eb757c2170452ad572f0b30e28c1bae9ce5bdcd7e"
+  },
+  "android/res/mipmap-anydpi-v26/ic_launcher.xml": {
+    "size_bytes": 275,
+    "sha256": "72180c5a25a5ff0139647e49b6afe585bec05cb2d0abb8a7cf08ae3f7848750e"
+  },
+  "android/res/mipmap-hdpi/ic_launcher.png": {
+    "size_bytes": 3214,
+    "sha256": "2ca8b21a7241b904c766d758d43ff3e51ef4b5b68b836badfaab1a3bc45bd952"
+  },
+  "android/res/mipmap-mdpi/ic_launcher.png": {
+    "size_bytes": 2126,
+    "sha256": "83f6a70a3ff531d4e7ca49d7635ee47acfbf1eaa4620bfb9c1cf972db030efb2"
+  },
+  "android/res/mipmap-xhdpi/ic_launcher.png": {
+    "size_bytes": 3676,
+    "sha256": "a3d49581abbef85a81f07dddbe9a169c5895975993716fd22448b353754dfcd2"
+  },
+  "android/res/mipmap-xxhdpi/ic_launcher.png": {
+    "size_bytes": 5836,
+    "sha256": "0496571204754b37069bdb382b55fb9e58fec333da2b43e04a64fba6ad371142"
+  },
+  "android/res/mipmap-xxxhdpi/ic_launcher.png": {
+    "size_bytes": 6913,
+    "sha256": "6e2a2379f4e01a7911e4e2204bdeab1c2147f36737fc19990329cedcf831aeb4"
+  },
+  "android/res/values/strings.xml": {
+    "size_bytes": 126,
+    "sha256": "b96ea9cdfedf6d8b4ceaa7a62f9ff87c7e23508e33243b246a4e1472e4d922b1"
+  },
+  "android/src/dev/wakka/continuity/signing/ApkManifest.java": {
+    "size_bytes": 13051,
+    "sha256": "b921a053ad6afa80f9d197b4430d5853e37b663caaf66c6071b9144204fd66bc"
+  },
+  "android/src/dev/wakka/continuity/signing/LocalApkSigner.java": {
+    "size_bytes": 11960,
+    "sha256": "87341fbad067839e5f38e4df4b4e4893454428c78c186b51d3b16cf0adce4679"
+  },
+  "android/src/dev/wakka/continuity/signing/LocalKeyStore.java": {
+    "size_bytes": 15999,
+    "sha256": "241f319dbae3e0aa3ebbb17162b2b9c794e711a50a5f38f611f4708f52f73857"
+  },
+  "android/src/dev/wakka/continuity/v12/LocalSigningActivity.java": {
+    "size_bytes": 29233,
+    "sha256": "6386a7b7ae777262f62cae32cac2b2c75f6468eb9edd881fa786215fedf74b4c"
+  },
+  "android/src/dev/wakka/continuity/v12/MainActivity.java": {
+    "size_bytes": 29630,
+    "sha256": "008245e8a40eb9a43d0ab22028d405901f0163104a75c577781570439089da8e"
+  },
+  "artifact-handoff.json": {
+    "size_bytes": 2098,
+    "sha256": "94b4aa48a8bb9b574ffb63a1f1602423c570383780043e9a234823c93569accc"
+  },
+  "artifact-passport.json": {
+    "size_bytes": 6420,
+    "sha256": "9c2e5eb663d666c578806c5863733f100e77ef7d0ac75908c5d4924b047c787f"
+  },
+  "artwork/README.txt": {
+    "size_bytes": 78,
+    "sha256": "1ac7f421a1b76bb7dfa2c9c9d7d72746d764688ec1389f0e9352bf367eb8b6fb"
+  },
+  "artwork/favicon-32.png": {
+    "size_bytes": 1398,
+    "sha256": "154c6c026443fd6ded28303fe9785e7797844f1729da84bd3e66e44d74915a6c"
+  },
+  "artwork/favicon-64.png": {
+    "size_bytes": 2349,
+    "sha256": "5957469bc8855e665a8ceeeb1dca711e92fcabe29c7301acf4241e4fa0955a43"
+  },
+  "artwork/favicon.ico": {
+    "size_bytes": 9976,
+    "sha256": "c5fd9ecf1d1d09d7f03e9c356491c788a690fc252aaf72555d0aa7b5debe618b"
+  },
+  "artwork/favicon.svg": {
+    "size_bytes": 1539,
+    "sha256": "d4f9d054d3cc4dad6f3e3326b5d9fc3fadb8bd7cc235adcec7a03f5370a6a2fd"
+  },
+  "artwork/icon-preview.png": {
+    "size_bytes": 17816,
+    "sha256": "064182c71a3dcce21fe4b7108dabae5bc88b85764c0e589f9f9634e984caa892"
+  },
+  "artwork/launcher-foreground.svg": {
+    "size_bytes": 1209,
+    "sha256": "c45628f02eb0f0bfead86dac92eb8d046e6149459f7feaf764154df3fb81f07d"
+  },
+  "dist/Workbench_Continuity_First_Time_Setup.zip": {
+    "size_bytes": 57149,
+    "sha256": "1bc0829bbec4a17e21c060b4006ebc40c9b0d2e9497e4d5cf04e3fc2a9924cca"
+  },
+  "dist/Workbench_Continuity_v1.2.0_PUBLIC.html": {
+    "size_bytes": 518735,
+    "sha256": "0112d4cab0d880111c60927749dcb1271bc3c613355a05cc60000b96d308a4f4"
+  },
+  "evidence/PRESERVED_SOURCE.json": {
+    "size_bytes": 910,
+    "sha256": "629987e9b13ee166be979c0f9755384227f0724d39930e365b175fc393433ae9"
+  },
+  "evidence/PUBLIC_APK_BUILD.json": {
+    "size_bytes": 5537,
+    "sha256": "0af4cefeb3a777b315bfbdeffb14f71b6b733691555946fc179ebc85cd806a38"
+  },
+  "evidence/PUBLIC_CONTENT_AUDIT.json": {
+    "size_bytes": 430,
+    "sha256": "4acd60707dcd41a506de9cee942b70432eed7c9d2599d160b5fc812b133eb079"
+  },
+  "evidence/PUBLIC_SIGNING_CERTIFICATE.cer": {
+    "size_bytes": 1302,
+    "sha256": "d79a38e6019df7a40190b188503007a20d8ff1f644e9f96886cac29f786c3ae9"
+  },
+  "evidence/local-signing-verification.json": {
+    "size_bytes": 4013,
+    "sha256": "b4a4366642f3a5e0519af41ea5cbf2930dbc75bf1e60c9731762f997d6a21fa8"
+  },
+  "evidence/runtime-roundtrip-report.json": {
+    "size_bytes": 1390,
+    "sha256": "02def182c326d90e98f08842a45a41fb49bf1c15ab93ec47a05c038a04255c49"
+  },
+  "evidence/signing-contract-results.json": {
+    "size_bytes": 1758,
+    "sha256": "12cdbfa7913338859631f22e6e1959803ddba46967cfdb915047100b1091118d"
+  },
+  "evidence/signing-v1.2/privacy-boundary-verification.json": {
+    "size_bytes": 2326,
+    "sha256": "97d59d8c82a9dcd3217fa1494304e333e2af0409d8a078075c0ff7c0dc82b7da"
+  },
+  "example/PocketNote/AndroidManifest.xml": {
+    "size_bytes": 454,
+    "sha256": "842ddd1c89c893d723b7073437af9cccb06788a0853bd65649be5342b0086e4e"
+  },
+  "example/PocketNote/LICENSE": {
+    "size_bytes": 434,
+    "sha256": "46a5fe8909c204dbf015685eb6cd6a8cf236ed9e5fcc523218c0bd8347d41697"
+  },
+  "example/PocketNote/README.txt": {
+    "size_bytes": 234,
+    "sha256": "5b81604877f026f93af352c202e3160a2e5c0180c44476c266caf288eaa6a586"
+  },
+  "example/PocketNote/artifact-handoff.json": {
+    "size_bytes": 1738,
+    "sha256": "fc513f0c6e5c81129100bec3e615bbcbcfc89077c13215824c9eecba4319f442"
+  },
+  "example/PocketNote/artifact-passport.json": {
+    "size_bytes": 4715,
+    "sha256": "f0ce1ab812617856dff615f5ced20f7560a676b91a73992efe56d51de399cf52"
+  },
+  "example/PocketNote/assets/README.txt": {
+    "size_bytes": 48,
+    "sha256": "607e7e2a9620aaf3f27bd7c3339292ddb71f507517e901f6091d4abe05402dd8"
+  },
+  "example/PocketNote/capsule-project.json": {
+    "size_bytes": 261,
+    "sha256": "015b572a20dea13b3ff5914dd2e04f0c6593b3979bc44db4bb445ed5298fd3e2"
+  },
+  "example/PocketNote/res/values/strings.xml": {
+    "size_bytes": 68,
+    "sha256": "9463dfbe9814554acd8ae49ab81777951aae9cd5091e56a63e17b49f4ee8da7b"
+  },
+  "example/PocketNote/src/dev/wakka/continuity/example/MainActivity.java": {
+    "size_bytes": 410,
+    "sha256": "aea918c16d1eb71369be0484b7434970a36f49f71564b398c9cc8f569804a58a"
+  },
+  "example/PocketNote.zip": {
+    "size_bytes": 4881,
+    "sha256": "4143182cd59452ffe787ab89c07742751ce06c86cc9ff8233e48920e5cfa654c"
+  },
+  "runtime/SDK_PINS.json": {
+    "size_bytes": 22101,
+    "sha256": "7b7c443de9134ab6762c3046ae87b80b3cd07a0b27fe8d80c6fc9dbfffaffdf5"
+  },
+  "signing-tests/SigningHarness.java": {
+    "size_bytes": 1592,
+    "sha256": "072b8eaec2eced84ad9930a784cfa91a4d9a90310338ee2fde25d499cc114841"
+  },
+  "signing-tests/privacy-boundary-test.py": {
+    "size_bytes": 4044,
+    "sha256": "6541726cd7ba88462ba38a973bcfb39cbb1493b3be2cbf53fe00aa5341b3540e"
+  },
+  "signing-tests/run-signing-tests.py": {
+    "size_bytes": 17466,
+    "sha256": "11c8d2f743dd0288f36a8826f16f486bdc614d3018d296010d42d45bd67cca31"
+  },
+  "src/continuity-carriers.js": {
+    "size_bytes": 26357,
+    "sha256": "10968051631a1c553c847d626bf1272343de3728426a89c2fda261ca6fbe277d"
+  },
+  "src/continuity-engine.js": {
+    "size_bytes": 101182,
+    "sha256": "c3591dea57c98181d0617bf98457ede8d9a8f73a85f5da547b3e61c238596e09"
+  },
+  "src/continuity-runtime.js": {
+    "size_bytes": 8992,
+    "sha256": "06b84af3e576ab13ae443bd7ba608d89bd3216eb92a20689e94846136bb1b3f7"
+  },
+  "src/continuity-ui.js": {
+    "size_bytes": 52385,
+    "sha256": "13a1cb9b40f706ea111adccf17dc3c26401862b86fb3b285ac5dbab527619408"
+  },
+  "src/ui.html": {
+    "size_bytes": 13074,
+    "sha256": "366259f58e23cdde87ab2c959b46311c413e48b5fbdc7ebed3de8de99c420d00"
+  },
+  "tests/dom-harness.js": {
+    "size_bytes": 3748,
+    "sha256": "fac5b9c3a22e58e51a1298936a812c336a095a33323975adff92b06a0882bd9f"
+  },
+  "tests/runtime-roundtrip.test.js": {
+    "size_bytes": 8231,
+    "sha256": "4e63c53bebfbb0926e910568cb03e10daea316c44141c4ee34bd66602a7d4022"
+  },
+  "tests/signing-contract.test.js": {
+    "size_bytes": 7444,
+    "sha256": "f1d2702e5411098802c47ec5bacdc651413f04412052b29792273fc69e0955a2"
+  },
+  "third-party/APACHE-2.0.txt": {
+    "size_bytes": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "third-party/APKSIG_PINS.json": {
+    "size_bytes": 374,
+    "sha256": "ce8b3d1a148f284be22a83451f24759963a35030ef7b2326cb1f7a747a46892d"
+  },
+  "third-party/NOTICE.txt": {
+    "size_bytes": 748,
+    "sha256": "70ab250cf0d1a2d439f557c785fd0c2520e790e48b521305426f973da95a79f1"
+  },
+  "tools/audit_public.py": {
+    "size_bytes": 3547,
+    "sha256": "6535038bed8185142ead7205222591bba931b7ac76e136618c816986ed45868e"
+  },
+  "tools/build_android.py": {
+    "size_bytes": 19702,
+    "sha256": "7958049d7196889b7022187f5bce8f2de52d37ab3cb7810206ca05bce6e81c30"
+  },
+  "tools/build_standalone.py": {
+    "size_bytes": 3379,
+    "sha256": "4ee3c1903b920f405412cc5eda18553d30e97c35041fb5b50e47cc63f6ce1382"
+  },
+  "tools/prepare_build_template.py": {
+    "size_bytes": 40592,
+    "sha256": "bb03bc19d898fb81afd4e006c47bb8528b1e32397442a7a04420c24b1afef24b"
+  },
+  "tools/prepare_signing_library.py": {
+    "size_bytes": 989,
+    "sha256": "1dfa68234580160fa19ecf3c451233d6bfe7315e9473647f0ec3e4d49e34a499"
+  },
+  "vendor/PROVENANCE.json": {
+    "size_bytes": 3178,
+    "sha256": "7add890313f89c7a9498808aa8a5c302f5ddec4b0c8fb4bd57a29ef026cf4638"
+  },
+  "vendor/android-build-capsule/.gitignore": {
+    "size_bytes": 225,
+    "sha256": "9ff423608b2f5c833872c832606422b9c8cc4c49e34a420f40512154a0187749"
+  },
+  "vendor/android-build-capsule/AI_START_HERE.txt": {
+    "size_bytes": 3179,
+    "sha256": "5082f80641e84f2d9b076fcdc7e0cbeeaf7bcb5d488c62a9a377e81e4698c182"
+  },
+  "vendor/android-build-capsule/COMPONENT_AUDIT.json": {
+    "size_bytes": 2343,
+    "sha256": "f83f2d1f44b4856bcd7de1e6731c2d6f96cfa2a52bb4fc6ec7005d38e20828dc"
+  },
+  "vendor/android-build-capsule/LICENSE": {
+    "size_bytes": 1062,
+    "sha256": "a8c0a87b7ae46e5f8a00218ddc281a61e4d1b83c440e9397964ef4ce28cc2e63"
+  },
+  "vendor/android-build-capsule/MAKE_CHAT_CAPSULE.bat": {
+    "size_bytes": 298,
+    "sha256": "f3f71bcf68441aa6a685effaa92ffdd0527269c165b3a28da026822163f236e9"
+  },
+  "vendor/android-build-capsule/PUBLIC_FILES.sha256.json": {
+    "size_bytes": 2742,
+    "sha256": "c4ecfac6d3fa139f3640bd5ec4da2cf22b8c15aad06337e6f06ee97fe0d6ab89"
+  },
+  "vendor/android-build-capsule/README.md": {
+    "size_bytes": 8167,
+    "sha256": "9e5446ed63417541816b5894493ae1cd4f45afc111dadeee8f7416c82e84b9e2"
+  },
+  "vendor/android-build-capsule/README_FIRST.txt": {
+    "size_bytes": 2844,
+    "sha256": "acf6b209df816dcca9236eb90e1fd1508a10abe3a9535db3b1259ad25d25975b"
+  },
+  "vendor/android-build-capsule/VERIFICATION.json": {
+    "size_bytes": 4599,
+    "sha256": "ffd539a91b4f674cdfb247e854e6f1b73081f242e81b4e9e5be859368535c2da"
+  },
+  "vendor/android-build-capsule/abc.py": {
+    "size_bytes": 28556,
+    "sha256": "a05d8fcccc8312fafca091b5705e58418271189272ec3bf0ea5eca13e6abd3cb"
+  },
+  "vendor/android-build-capsule/artifact-handoff.json": {
+    "size_bytes": 3788,
+    "sha256": "263f670817fa4d601c80a0b4da27b84277c5c836c7d1fb4d9eed79a4bf2cf215"
+  },
+  "vendor/android-build-capsule/artifact-passport.json": {
+    "size_bytes": 7640,
+    "sha256": "f8d45a6c3de71d372f2a1d8cd952b30ec328ad0e14b1debb4219461bc537ef35"
+  },
+  "vendor/android-build-capsule/docs/COMPONENT_REVIEW.md": {
+    "size_bytes": 3983,
+    "sha256": "e7faee7b377e48593ef2d6a50c20c10e6dec748ca06f7e91f7827cde2db7be81"
+  },
+  "vendor/android-build-capsule/docs/PUBLIC_PATH_BUILD_EVIDENCE.json": {
+    "size_bytes": 3674,
+    "sha256": "883fb8194bc1592601354f24fefde7b7a9b0f45774bdf89f6f94ed4cfa01f66f"
+  },
+  "vendor/android-build-capsule/docs/PUBLIC_PATH_TEST.md": {
+    "size_bytes": 2077,
+    "sha256": "7a7eee9d0416a838a4b852c948fa5ae3e712f40bb615f9e7b33f72ab319c0228"
+  },
+  "vendor/android-build-capsule/docs/PUBLIC_PATH_VERIFICATION.json": {
+    "size_bytes": 2451,
+    "sha256": "8087a19b4328868e1f1f26310470dafa8021cefd71c4dd7618cef90cec589d92"
+  },
+  "vendor/android-build-capsule/examples/CapsuleDemo/AndroidManifest.xml": {
+    "size_bytes": 729,
+    "sha256": "0405d33a1e641d6716b1f9ebf3ca79a8f10f91570681a98d598e1d2371ae27d2"
+  },
+  "vendor/android-build-capsule/examples/CapsuleDemo/assets/index.html": {
+    "size_bytes": 1506,
+    "sha256": "d194479c7b22b8130ab27650819772b84bccd82ae3275379861ad00a1b20d3ad"
+  },
+  "vendor/android-build-capsule/examples/CapsuleDemo/capsule-project.json": {
+    "size_bytes": 254,
+    "sha256": "03641711418b3551a492c313c4a449916a29f8341a27ea5f7a623fbe672416d1"
+  },
+  "vendor/android-build-capsule/examples/CapsuleDemo/prebuilt/BUILD_EVIDENCE.json": {
+    "size_bytes": 3674,
+    "sha256": "1f921d8376515b629386f66144a4bc8cce066e53df2e526c85c1c67aeef0669e"
+  },
+  "vendor/android-build-capsule/examples/CapsuleDemo/prebuilt/CapsuleDemo_v0.1.0.apk": {
+    "size_bytes": 16850,
+    "sha256": "396887aca9589a700576eef2f9a45bea6963b07859880071f1376caa16930f3d"
+  },
+  "vendor/android-build-capsule/examples/CapsuleDemo/res/values/strings.xml": {
+    "size_bytes": 108,
+    "sha256": "e731ae84a2aa56a7223043bd67ea4f4d230903bf92979345db25ce530c73b8fc"
+  },
+  "vendor/android-build-capsule/examples/CapsuleDemo/src/dev/wakka/capsuledemo/MainActivity.java": {
+    "size_bytes": 2011,
+    "sha256": "17454df532125a7fa373044a7d95267957ad24aec54f4098d1f464ee23caf91c"
+  },
+  "vendor/android-build-capsule/examples/CapsuleDemo/tools/build-apk.sh": {
+    "size_bytes": 541,
+    "sha256": "0e2a24d588752b37861b4dc869cd4e6f54ac708ff96080aa73d8e04ce6212546"
+  },
+  "vendor/android-build-capsule/official-downloads.json": {
+    "size_bytes": 976,
+    "sha256": "7fd7bc6474f50c7c7fb649e6f8f06b2e2f51414540146a3cdbfb3a899c1163d9"
+  },
+  "vendor/android-build-capsule/tests/test_core.py": {
+    "size_bytes": 6055,
+    "sha256": "d00476f7c4b46bd015094f306ccf041e49ff4bc9c9bb3eb13c2fed6a64848e40"
+  },
+  "vendor/android-build-capsule/tools/Make-Chat-Capsule.ps1": {
+    "size_bytes": 12922,
+    "sha256": "b9f530659e67b0fca0aa99e0d555b3da9885957bda1a53359aa024bf5d9f13a1"
+  },
+  "vendor/android-build-capsule/tools/package_public.py": {
+    "size_bytes": 1727,
+    "sha256": "5a0fa4d59433278dff0a70b8e028b15ffa06df9e85d1974e8484a968b05efa63"
+  }
+}

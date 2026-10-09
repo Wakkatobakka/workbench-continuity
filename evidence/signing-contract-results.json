@@ -1,0 +1,43 @@
+{
+  "suite": "continuity-signing-workflow-contract-v1.2",
+  "checks": [
+    {
+      "name": "Signer is accessible before a project is open and opens native private workflow",
+      "status": "passed"
+    },
+    {
+      "name": "Desktop HTML states actual Android signer is required",
+      "status": "passed"
+    },
+    {
+      "name": "Open project exports explicit private-signing handoff without identity claims",
+      "status": "passed"
+    },
+    {
+      "name": "Public receipt is attached as new evidence without altering source or owner runtime observations",
+      "status": "passed"
+    },
+    {
+      "name": "Same versionCode replacement is accepted while downgrade and mismatched identity claims are rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Cancelled or invalid native receipt makes no evidence or success claim",
+      "status": "passed"
+    },
+    {
+      "name": "Public edition keeps both destinations available and explains first-time runtime setup",
+      "status": "passed"
+    }
+  ],
+  "scope": "Source-level DOM/native callback/export contract. No native signing, rendering, phone install, or external AI execution is established by these checks.",
+  "passed": true,
+  "finishedAt": "2026-10-07T12:47:39.932Z",
+  "sourceSha256": {
+    "src/continuity-ui.js": "13a1cb9b40f706ea111adccf17dc3c26401862b86fb3b285ac5dbab527619408",
+    "src/continuity-carriers.js": "10968051631a1c553c847d626bf1272343de3728426a89c2fda261ca6fbe277d",
+    "src/ui.html": "366259f58e23cdde87ab2c959b46311c413e48b5fbdc7ebed3de8de99c420d00",
+    "tools/prepare_build_template.py": "bb03bc19d898fb81afd4e006c47bb8528b1e32397442a7a04420c24b1afef24b"
+  },
+  "testSha256": "f1d2702e5411098802c47ec5bacdc651413f04412052b29792273fc69e0955a2"
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "urn:artifact-passport:handoff-schema:0.7",
+  "spec_version": "0.7",
+  "passport_id": "wakka.workbench.continuity.standalone",
+  "artifact": {
+    "name": "Workbench Continuity",
+    "version": "1.2.0"
+  },
+  "updated_at": "2026-10-07T12:19:41Z",
+  "review": {
+    "status": "ai-draft",
+    "notes": "Public release preparation; inspect current host and emitted-route evidence. No fresh phone result claimed."
+  },
+  "working_state": {
+    "current_status": "Public release preparation complete; inspect current evidence.",
+    "current_known_good": "Core source preserved; public Maven signer dependency and fresh Claude/Grok routes passed host checks.",
+    "last_material_change": "Integrated verified per-person runtime setup/import while excluding owner-private carriers and keys.",
+    "current_objective": "Publish the prepared public source and release assets.",
+    "recommended_next_move": "Use RELEASE_NOTES.md and attach the public release files. Keep signing backup separately private.",
+    "failed_attempts": []
+  },
+  "context_snapshot": {
+    "do_not_break": [
+      "Current source and work state travel together.",
+      "Signing keys stay outside project and AI packets.",
+      "Original project engine and native signer remain unchanged."
+    ],
+    "decision_history": [
+      "Include public ABC setup inside Workbench.",
+      "Generate per-person private SDK carriers.",
+      "Use a separate public Android identity to preserve the existing private installation."
+    ],
+    "known_uncertainties": [
+      "Fresh public APK physical-device and external Claude/Grok sessions remain unobserved."
+    ],
+    "recent_delta_from": "Workbench Continuity 1.2.0 owner-private source",
+    "recent_delta": [
+      "Prepared SDK-free public distribution while preserving engine and private signing code."
+    ]
+  },
+  "context_routes": {
+    "always_read": [
+      "artifact-passport.json",
+      "artifact-handoff.json",
+      "README.md",
+      "BUILD.md",
+      "VERIFICATION.md"
+    ],
+    "by_task": [],
+    "avoid_by_default": []
+  },
+  "open_questions": []
+}

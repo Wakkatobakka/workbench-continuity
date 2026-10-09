@@ -1,0 +1,7 @@
+{
+  "maven_coordinates": "com.android.tools.build:apksig:8.6.1",
+  "artifact_url": "https://dl.google.com/dl/android/maven2/com/android/tools/build/apksig/8.6.1/apksig-8.6.1.jar",
+  "filtered_jar_sha256": "c070ed1394629d74641aa0906f60b2ffa1ee77e6366a1f93437f59717b1aeb89",
+  "license": "Apache-2.0",
+  "scope": "Public Maven dependency; no SDK or owner runtime contents."
+}

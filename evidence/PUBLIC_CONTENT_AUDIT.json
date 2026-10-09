@@ -1,0 +1,11 @@
+{
+  "format": "workbench-public-content-audit/1",
+  "passed": true,
+  "inspected_files_and_members": 578,
+  "nested_archives": 11,
+  "owner_keys_absent": true,
+  "sdk_runtime_payloads_absent": true,
+  "embedded_setup_and_core_inspected": true,
+  "public_signing_library": "Apache-2.0 Maven artifact; included intentionally",
+  "scope": "File paths, byte hashes, key markers, nested archives and embedded public setup payloads."
+}

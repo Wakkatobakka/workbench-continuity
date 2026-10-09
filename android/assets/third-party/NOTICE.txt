@@ -1,0 +1,13 @@
+Workbench Continuity includes com.android.tools.build:apksig:8.6.1.
+Copyright The Android Open Source Project.
+Licensed under the Apache License, Version 2.0; see APACHE-2.0.txt.
+The published Maven artifact is used unchanged. It supplies APK signing and
+verification. It is a library dependency, not the Android SDK runtime.
+
+Integrated Android Build Capsule public code and example:
+Copyright 2026 WAKKA. MIT license in vendor/android-build-capsule/LICENSE.
+Upstream repository and exact revision are recorded in vendor/PROVENANCE.json.
+
+Google SDK components are downloaded by each person during setup after their
+own agreement decision. Generated SDK ZIPs and carriers are private outputs
+and are not included in this public source or release.

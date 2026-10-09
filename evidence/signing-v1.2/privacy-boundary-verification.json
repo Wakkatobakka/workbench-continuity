@@ -1,0 +1,72 @@
+{
+  "format": "continuity-local-signing-privacy-audit/1",
+  "passed": true,
+  "source_sha256": {
+    "android/AndroidManifest.xml": "c9e5f5e0f111dc8423e7bcef42e6400fa6af51dec661ed1a538f5298e114ba66",
+    "android/src/dev/wakka/continuity/v12/MainActivity.java": "008245e8a40eb9a43d0ab22028d405901f0163104a75c577781570439089da8e",
+    "android/src/dev/wakka/continuity/v12/LocalSigningActivity.java": "6386a7b7ae777262f62cae32cac2b2c75f6468eb9edd881fa786215fedf74b4c",
+    "android/src/dev/wakka/continuity/signing/LocalApkSigner.java": "87341fbad067839e5f38e4df4b4e4893454428c78c186b51d3b16cf0adce4679"
+  },
+  "tests": [
+    {
+      "test": "Signing WebView entry has no key/password/file parameters",
+      "passed": true
+    },
+    {
+      "test": "Native signing screen exposes no Javascript interfaces",
+      "passed": true
+    },
+    {
+      "test": "Password fields are native and masked",
+      "passed": true
+    },
+    {
+      "test": "Native key/password fields are excluded from saved UI state and autofill",
+      "passed": true
+    },
+    {
+      "test": "Native screen protects screenshots",
+      "passed": true
+    },
+    {
+      "test": "Local signing activity is not externally exported",
+      "passed": true
+    },
+    {
+      "test": "App declares no network permission",
+      "passed": true
+    },
+    {
+      "test": "Private key uses app cache staging rather than project assets or storage",
+      "passed": true
+    },
+    {
+      "test": "Private original ZIP key extraction remains in native code",
+      "passed": true
+    },
+    {
+      "test": "Password buffers are wiped after signing",
+      "passed": true
+    },
+    {
+      "test": "Returned receipt is emitted only after successful save",
+      "passed": true
+    },
+    {
+      "test": "Receipt retains untested installation scope",
+      "passed": true
+    },
+    {
+      "test": "APK signature name does not disclose owner alias",
+      "passed": true
+    },
+    {
+      "test": "Public signer receipt does not contain key, password, alias or key paths",
+      "passed": true
+    }
+  ],
+  "scope": "Static native/UI boundary inspection of issued source. Host signer execution is reported separately.",
+  "limitations": [
+    "No native Android UI, SAF picker, process-death recovery or physical-device installation was executed."
+  ]
+}

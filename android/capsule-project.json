@@ -1,0 +1,12 @@
+{
+  "profile": "plain-java",
+  "package": "dev.wakka.continuity.publicv12",
+  "version_name": "1.2.0",
+  "version_code": 3,
+  "min_sdk": 28,
+  "target_sdk": 35,
+  "sources": "src",
+  "resources": "res",
+  "assets": "assets",
+  "manifest": "AndroidManifest.xml"
+}

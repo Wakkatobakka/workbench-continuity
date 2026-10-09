@@ -1,0 +1,22 @@
+{
+  "src/continuity-engine.js": {
+    "sha256": "c3591dea57c98181d0617bf98457ede8d9a8f73a85f5da547b3e61c238596e09",
+    "unchanged_from_v1_2_0": true
+  },
+  "android/src/dev/wakka/continuity/v12/LocalSigningActivity.java": {
+    "sha256": "6386a7b7ae777262f62cae32cac2b2c75f6468eb9edd881fa786215fedf74b4c",
+    "unchanged_from_v1_2_0": true
+  },
+  "android/src/dev/wakka/continuity/signing/LocalApkSigner.java": {
+    "sha256": "87341fbad067839e5f38e4df4b4e4893454428c78c186b51d3b16cf0adce4679",
+    "unchanged_from_v1_2_0": true
+  },
+  "android/src/dev/wakka/continuity/signing/LocalKeyStore.java": {
+    "sha256": "241f319dbae3e0aa3ebbb17162b2b9c794e711a50a5f38f611f4708f52f73857",
+    "unchanged_from_v1_2_0": true
+  },
+  "android/src/dev/wakka/continuity/signing/ApkManifest.java": {
+    "sha256": "b921a053ad6afa80f9d197b4430d5853e37b663caaf66c6071b9144204fd66bc",
+    "unchanged_from_v1_2_0": true
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "$schema": "urn:artifact-passport:schema:0.7",
+  "spec_version": "0.7",
+  "passport_id": "wakka.workbench.continuity.pocketnote",
+  "artifact": {
+    "name": "Pocket Note",
+    "version": "1.0.0",
+    "kind": "application",
+    "description": "Small plain-Java Android source example for standalone Workbench Continuity.",
+    "updated_at": "2026-10-06T03:02:41.207693+00:00",
+    "tags": [
+      "android",
+      "example",
+      "continuity"
+    ]
+  },
+  "intent": {
+    "purpose": "Practice carrying a small project and its current work state into a supported offline Android build.",
+    "audiences": [
+      "Project owners",
+      "Continuing collaborators"
+    ],
+    "success_criteria": [
+      "Source and state survive a verified packet round trip."
+    ],
+    "out_of_scope": [
+      "Universal Android support",
+      "Claiming phone behavior from compilation."
+    ]
+  },
+  "operation": {
+    "entry_points": [
+      {
+        "path": "README.txt",
+        "role": "Example overview",
+        "open_with": "Text editor"
+      },
+      {
+        "path": "capsule-project.json",
+        "role": "Plain-Java Android build profile",
+        "open_with": "JSON editor"
+      }
+    ],
+    "environment": [
+      "Linux x86_64 with Python 3.10+ and host JDK 17+ for a build",
+      "Android API 23+ for phone test"
+    ],
+    "network_policy": "forbidden",
+    "network_notes": "This fixture uses local assets and no network permission; a prepared offline Android runtime supplies build tools.",
+    "dependencies": [
+      {
+        "name": "Owner-provided Android runtime",
+        "requirement": "Android API 35 plus Linux Build Tools 35.0.0",
+        "purpose": "Compile and sign the fixture using the workbench runner"
+      }
+    ]
+  },
+  "structure": {
+    "source_of_truth": [
+      {
+        "path": "capsule-project.json",
+        "role": "Owned example source"
+      },
+      {
+        "path": "AndroidManifest.xml",
+        "role": "Owned example source"
+      },
+      {
+        "path": "src",
+        "role": "Owned example source"
+      },
+      {
+        "path": "res",
+        "role": "Owned example source"
+      },
+      {
+        "path": "assets",
+        "role": "Owned example source"
+      }
+    ],
+    "generated_outputs": [],
+    "protected_items": [],
+    "ignore": []
+  },
+  "constraints": {
+    "allowed_actions": [
+      "Inspect, edit, build, and carry this owned example."
+    ],
+    "must": [
+      "Keep build and phone evidence separate."
+    ],
+    "must_not": [
+      "Claim a phone test without new device evidence."
+    ],
+    "preserve": [
+      "Source and current work state."
+    ],
+    "data_classification": "public",
+    "data_handling": {
+      "may_leave_device": "yes",
+      "approved_contexts": [
+        "Owner-selected build chat",
+        "Public source example"
+      ],
+      "redaction_required": false,
+      "notes": "Owned small example; no SDK tools or signing key is included."
+    }
+  },
+  "procedures": {
+    "setup": [
+      "Read README.txt and artifact-handoff.json."
+    ],
+    "edit": [
+      "Keep this candidate separate from the original checkpoint."
+    ],
+    "build": [
+      "Use the integrated verified per-person build route with --project pointing at this current source packet."
+    ],
+    "verify": [
+      "Verify packet checksums, compile, verify signed APK, then separately test on a phone."
+    ],
+    "release": [
+      "Return actual APK and source/context result bundle to the owner."
+    ],
+    "recovery": [
+      "Read artifact-handoff.json; continue this owned example. No earlier device evidence applies."
+    ]
+  },
+  "verification": {
+    "checks": [
+      {
+        "id": "build-current-source",
+        "description": "Build the actual current owned example",
+        "method": "command",
+        "expected": "dev.wakka.continuity.example version 1.0.0; source compiled and APK signature verified. Device behavior remains separate.",
+        "required": true
+      }
+    ]
+  },
+  "authority": {
+    "owner": "Wakka",
+    "approvers": [
+      "Wakka"
+    ],
+    "change_policy": "Continue this owned Pocket Note example; do not inherit any other project or device evidence."
+  },
+  "review": {
+    "status": "ai-draft",
+    "notes": "New owned sample; no build or phone result is claimed."
+  },
+  "handoff": {
+    "start_here": "Read artifact-handoff.json and README.txt.",
+    "safe_first_actions": [
+      "Read the preserved current objective and decisions",
+      "Build this modified source into the separate candidate APK"
+    ],
+    "known_limitations": [
+      "Requires the plain-Java build profile and host Python/JDK."
+    ],
+    "open_questions": [
+      "What should be changed next?"
+    ]
+  }
+}
